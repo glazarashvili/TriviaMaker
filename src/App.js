@@ -4,8 +4,8 @@ import React from 'react'
 import Test from './components/Test'
 import Header from './components/Header'
 import Trivia from './components/Trivia'
-import Loading from './components/Loading'
 import Form from './components/Form.jsx'
+import Loading from './components/Loading'
 
 const API_URL = 'https://opentdb.com/api.php?amount='
 
@@ -54,13 +54,14 @@ const App = () => {
       setTests(response.data.results)
       setLoading(false)
       setTrivia(true)
-    }).catch(error => console.log(error))
+    }).catch(() => 
+      alert('something went wrong'))
     } else {
       setError(true)
     }
   }
 
-  const test = <Test tests={tests} playAgain={playAgain}/>
+  const test = <Test tests={tests} playAgain={playAgain} />
   
   const setupForm = (
     <React.Fragment>

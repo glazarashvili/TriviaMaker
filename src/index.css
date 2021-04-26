@@ -210,6 +210,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.results-text span {
+  text-decoration: underline;
+  color: #278d90;
+}
+
 .play-again-btn {
   border-color: transparent;
   padding: 0.5rem 0.5rem;
