@@ -101,21 +101,22 @@ body {
 }
 
 .form-input {
-  border: none;
   background: var(--clr-grey-10);
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
   width: 100%;
   border: 1px solid #b6b6b6;
+  outline: none;
+  border-radius: 5px;
 }
 
 .error-text {
-    color: rgb(185, 48, 48);
-    text-transform: capitalize;
+  color: rgb(185, 48, 48);
+  text-transform: capitalize;
 }
 
 .amount {
-  width: 98%;
+  width: calc(100% - 18px);
 }
 
 .all-answers {
@@ -213,6 +214,7 @@ body {
 .results-text span {
   text-decoration: underline;
   color: #278d90;
+  margin: 0px 5px;
 }
 
 .play-again-btn {
