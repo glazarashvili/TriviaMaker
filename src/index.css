@@ -1,13 +1,233 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
 }
+
+.header {
+  width: 100%;
+  background: #278d90;
+  padding-left: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header p {
+  font-size: 28px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.image {
+  width: 70px;
+  cursor: pointer;
+}
+
+.trivia {
+  background: #fff;
+  padding: 40px 40px 80px;
+  width: 50%;
+  margin: 200px auto;
+  height: 350px;
+}
+
+.results-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.results-section p {
+  font-size: 1.2rem;
+  color: #278d90;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.next-question-btn {
+  border-color: transparent;
+  padding: 0.5rem 0.5rem;
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: #6ec1e4;
+  cursor: pointer;
+  border: 1px solid #8b48bf;
+  border-radius: 5px;
+  outline: none;
+}
+
+.setup-form h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color:#8b48bf;
+  font-weight: bold;
+}
+
+.setup-form h2:hover {
+  color: #278d90;
+  transition: 0.5s ease-in;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+}
+
+.form-control label {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  border: none;
+  background: var(--clr-grey-10);
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  border: 1px solid #b6b6b6;
+}
+
+.error-text {
+    color: rgb(185, 48, 48);
+    text-transform: capitalize;
+}
+
+.amount {
+  width: 98%;
+}
+
+.all-answers {
+  margin-top: 40px;
+}
+
+.answer-btn {
+  display: block;
+  width: 80%;
+  margin: 0.75rem auto;
+  border-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #6ec1e4;
+}
+
+.answer-btn:hover {
+  background: #6ec1e4;
+}
+
+.start-btn {
+  border-color: transparent;
+  padding: 0.5rem 0.5rem;
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: #8b48bf;
+  cursor: pointer;
+  border: 1px solid #278d90;
+  border-radius: 5px;
+  outline: none;
+}
+
+.question {
+  color:rgb(73, 72, 72);
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color:#278d90;
+  font-weight: bold;
+}
+
+
+.start-btn:hover {
+  background: #278d90;
+  transition: 0.5s ease-in;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: #278d90;
+  animation: spinner 0.6s linear infinite;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+}
+
+.results-text {
+  font-size: 20px;
+  color: #8b48bf;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.play-again-btn {
+  border-color: transparent;
+  padding: 0.5rem 0.5rem;
+  width: 35%;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: #8b48bf;
+  cursor: pointer;
+  border: 1px solid #278d90;
+  border-radius: 5px;
+  outline: none;
+}
+
+.play-again-btn:hover {
+  background: #278d90;
+  transition: 0.5s ease-in;
+}
+
